@@ -93,7 +93,7 @@ def disablebtn():
 
 
 def scoreboard():
-    global tie
+    global tie, btns
     if btn1['text'] == btn2['text'] and btn1['text'] == btn3['text'] and btn1["text"] == "X":
         btn1.configure(bg="PeachPuff4")
         btn2.configure(bg="PeachPuff4")
@@ -288,14 +288,14 @@ def scoreboard():
 
     elif tie == 8:
         tkinter.messagebox.showinfo("Tie game", "This game is tie....")
-
         reset()
         check(btns)
 
 
+
 def reset():
-
-
+    global tie
+    tie = 0
     btn1["text"] = " "
     btn2["text"] = " "
     btn3["text"] = " "
@@ -325,7 +325,7 @@ def New_Game():
     player1 = Entry(rightframe1, font=("arial", 20, "bold"), text="None")
     player1.grid(row=0, column=1, sticky=N + E + S + W)
 
-    player2 = Entry(rightframe1,font=("arial", 20, "bold"), text="None")
+    player2 = Entry(rightframe1, font=("arial", 20, "bold"), text="None")
     player2.grid(row=1, column=1, sticky=N + E + S + W)
 
     reset()
@@ -343,7 +343,6 @@ def New_Game():
 
 
 def Clear():
-
     playerX.set(0)
     playerO.set(0)
 

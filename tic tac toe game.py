@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter.messagebox
 
 window = Tk()
-window.geometry("1801x700+0+0")
+window.geometry("1802x700+0+0")
 window.title("Tic Tac Toe")
 window.configure(background="steelblue4")
 

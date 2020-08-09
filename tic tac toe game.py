@@ -5,7 +5,7 @@ window = Tk()
 window.geometry("1800x700+0+0")
 window.title("Tic Tac Toe")
 window.configure(background="steelblue4")
-print ('hello')
+
 Tops = Frame(window, bg="paleTurquoise4", height=100, bd=18, width=1800, pady=8, padx=8, relief=RAISED)
 Tops.grid(row=0, column=0)
 

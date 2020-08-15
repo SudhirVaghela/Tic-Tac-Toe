@@ -1,6 +1,7 @@
 from tkinter import *
 import tkinter.messagebox
 
+
 window = Tk()
 window.geometry("1800x700+0+0")
 window.title("Tic Tac Toe")
